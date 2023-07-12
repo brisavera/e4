@@ -80,7 +80,15 @@
 }
 
 @media (max-width: 576px) {
-  navbar ul {
+  body {
+    max-width: 2000px;
+  }
+  .header {
+    display: flex;
+    max-width: 100%;
+    border: solid #df0909;
+  }
+  .navbar ul {
     background-color: #ffdde1;
     width: 100%;
     height: 400px;
@@ -102,30 +110,92 @@
   }
 
   #hero {
-    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 
-  #info p {
+  .hero-info h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-info p {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 16px;
-    width: 600px;
-  }
-  .card {
-    gap: rem;
-    max-width: 200px;
+    width: 100%;
+    font-size: 20px;
   }
 
-  .container-form {
+  .hero-info a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    display: none;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+  #info p {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    gap: 5px;
+    padding: 10px 10px;
+    border: solid #df0909;
+  }
+
+  #servicios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-info {
+    gap: 10px;
+  }
+
+  #container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .info-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
-  .card-info {
-    gap: 2rem;
-    max-width: 200px;
+
+  .info-form h2 {
+    font-size: 20px;
+  }
+  .container-form img {
+    display: none;
+
+    * {
+      border: solid blue;
+    }
   }
 }
