@@ -80,8 +80,9 @@
 }
 
 @media (max-width: 576px) {
-  body {
-    max-width: 2000px;
+  .nav {
+    border: solid #df0909;
+    border-radius: 10px;
   }
   .header {
     display: flex;
@@ -99,6 +100,7 @@
     align-items: center;
     justify-content: center;
     display: none;
+    padding: 10px 10px;
   }
 
   .navbar i {
@@ -147,38 +149,42 @@
     justify-content: center; */
   }
   #info p {
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     gap: 5px;
-    padding: 10px 10px;
+    padding: 20px 30px;
     border: solid #df0909;
   }
 
   #servicios {
     display: flex;
-    flex-direction: column;
   }
 
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .card-info {
     gap: 10px;
-  }
-
-  #container-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+  }
+
+  #container-form {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
   }
 
   .info-form {
@@ -189,13 +195,9 @@
   }
 
   .info-form h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .container-form img {
     display: none;
-
-    * {
-      border: solid blue;
-    }
   }
 }
